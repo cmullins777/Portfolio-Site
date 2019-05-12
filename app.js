@@ -21,8 +21,8 @@ app.get('/about', (req, res) => {
 app.get('/projects/:id', (req, res) => {
   const {id} = req.params;
   const project = projects[id];
-  if (isNaN(id) || id > projects.length) {
-    return res.redirect('/');
+  if (isNaN(id) || id >= projects.length) {
+   return res.redirect('/');
   }
   res.render('project', {project});
 });
@@ -30,12 +30,14 @@ app.get('/projects/:id', (req, res) => {
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   err.status = 404;
+  console.log("Sorry, there's an error.")
   next(err);
 });
 
 app.use((err, req, res, next) => {
   res.locals.error = err;
   res.status(err.status);
+  console.log("Sorry, there's an error.")
   res.render('error');
 });
 
