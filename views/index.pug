@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+  article.grid-container.portfolio-intro
+    div
+
+      //- Add a title or heading like My Portfolio, or Hey, Potential Employers, or Let's make the web great together!
+      h1 My Portfolio
+
+      //- Add a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc.
+      p.lead.text-light
+        | This site uses Node.js, Express and Pug to showcase my Treehouse Techdegree adventures so far featuring: <br> * pagination, <br> * form functionality, <br> * game logic, and <br> * API requests using JS libraries and tools.
+  article.grid-container.portfolio-index
+
+    .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
+
+       each project in projects
+         .cell
+           a(href=`/projects/${project.id}`)
+             img.thumbnail(src=`/static/images/${project.image_urls[0]}`)
+             h7 #{project.project_name}
