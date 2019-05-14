@@ -15,6 +15,11 @@ h1,h2,h3,h4,h5,p{
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
     font-weight: 600;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(239, 26, 133));
+  }
+
+  h7{
+    font-style: italic;
   }
 
   p{
@@ -42,6 +47,11 @@ a{
   color: #333;
 }
 
+a.nav{
+  color: #333;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(239, 26, 133));
+}
+
 a:hover{
   color: #111;
 }
@@ -51,7 +61,7 @@ a:hover{
   max-width: 100%;
   margin-bottom: 1rem;
   border: solid 4px #fefefe;
-  border-radius: 0;
+  border-radius: 25px;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
   line-height: 0;
 }
@@ -99,12 +109,12 @@ a:hover{
 
 .portfolio-intro{
   margin: 0;
-  padding: 40px 50px 30px;
+  padding: 40px 50px 20px;
 }
 
 .portfolio-intro p{
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: 40px;
+  padding-bottom: 5px;
 }
 
 .portfolio-index{
@@ -114,6 +124,11 @@ a:hover{
 
   .portfolio-index .thumbnail{
     margin-bottom: 5px;
+    border-radius: 25px;
+  }
+
+  .thumbnail.proj:hover{
+    border-color: fuchsia;
   }
 
   .portfolio-index a{

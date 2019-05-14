@@ -14,29 +14,23 @@ html(class="no-js" lang="en" dir="ltr")
         block sidebar
           br
           .cell.shrink
-            img.thumbnail(src="../static/images/Cindy3.jpg")
+            img.me.thumbnail(src="../static/images/Cindy3.jpg")
           .cell.auto
 
-            //- Add your name here.
             h5 Cindy Mullins
 
-            //- Add text here to describe who you are, what you do, and why you are so aweome.
             p.text-light
               | I'm an aspiring fullstack developer who loves travel, boating, sushi, and building front end apps.
 
-            //- Add about page route to the href below.
-            a(href='/about') Learn More →
+            a.nav(href='/about') Learn More →
 
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
 
-          //- Add your name here.  This is for the mobile screen sized version.
           span.title-bar-title Cindy Mullins
       block content
-
-
 
   script(src='/static/js/vendor/jquery.js')
   script(src='/static/js/vendor/what-input.js')
