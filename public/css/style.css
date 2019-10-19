@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,p{
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
     font-weight: 600;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(239, 26, 133));
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,102,102));
   }
 
   h7{
@@ -44,12 +44,12 @@ h1,h2,h3,h4,h5,p{
 }
 
 a{
-  color: #333;
+  color: #C0C0C0;
 }
 
 a.nav{
-  color: #333;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(239, 26, 133));
+  color: #C0C0C0;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(0,102,102));
 }
 
 a:hover{
